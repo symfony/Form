@@ -313,7 +313,7 @@ class DateType extends AbstractType
         $resolver->setAllowedTypes('months', 'array');
         $resolver->setAllowedTypes('days', 'array');
         $resolver->setAllowedTypes('input_format', 'string');
-        $resolver->setAllowedTypes('calendar', ['null', \IntlCalendar::class]);
+        $resolver->setAllowedTypes('calendar', ['null', 'int', \IntlCalendar::class]);
 
         $resolver->setInfo('calendar', 'The calendar to use for formatting and parsing the date. The value should be an instance of \IntlCalendar. By default, the Gregorian calendar with the default locale is used.');
 
