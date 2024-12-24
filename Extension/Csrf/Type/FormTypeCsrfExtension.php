@@ -76,7 +76,7 @@ class FormTypeCsrfExtension extends AbstractTypeExtension
             $csrfForm = $factory->createNamed($options['csrf_field_name'], HiddenType::class, $data, [
                 'block_prefix' => 'csrf_token',
                 'mapped' => false,
-                'attr' => $this->fieldAttr + ['autocomplete' => 'off'],
+                'attr' => $this->fieldAttr,
             ]);
 
             $view->children[$options['csrf_field_name']] = $csrfForm->createView($view);
