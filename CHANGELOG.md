@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+7.3
+---
+
+ * Add support for displaying nested options in DebugCommand
+
 7.2
 ---
 
