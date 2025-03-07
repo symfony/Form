@@ -67,7 +67,7 @@ class CsrfValidationListenerTest extends TestCase
         $validation->preSubmit($event);
 
         $this->assertInstanceOf(FormErrorIterator::class, $this->form->getErrors());
-        $this->assertGreaterThan(0, count($this->form->getErrors()));
+        $this->assertGreaterThan(0, \count($this->form->getErrors()));
     }
 
     public function testMaxPostSizeExceeded()
